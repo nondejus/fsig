@@ -49,7 +49,7 @@ Download a precompiled binary for the [latest](https://github.com/sagikazarmark/
 RUN apt-get update && apt-get install -y wget
 
 ENV FSIG_VERSION 0.4.0
-RUN wget https://github.com/sagikazarmark/fsig/releases/download/v${FSIG_VERSION}/fsig_${FSIG_VERSION}_linux_amd64.tar.gz \
+RUN wget https://github.com/nondejus/fsig/releases/download/v${FSIG_VERSION}/fsig_${FSIG_VERSION}_linux_amd64.tar.gz \
     && tar -C /usr/local/bin -xzvf fsig_${FSIG_VERSION}_linux_amd64.tar.gz fsig \
     && rm fsig_linux_amd64.tar.gz
 ```
@@ -60,7 +60,7 @@ RUN wget https://github.com/sagikazarmark/fsig/releases/download/v${FSIG_VERSION
 RUN apk add --no-cache openssl
 
 ENV FSIG_VERSION 0.4.0
-RUN wget https://github.com/sagikazarmark/fsig/releases/download/v${FSIG_VERSION}/fsig_${FSIG_VERSION}_linux_amd64.tar.gz \
+RUN wget https://github.com/nondejus/fsig/releases/download/v${FSIG_VERSION}/fsig_${FSIG_VERSION}_linux_amd64.tar.gz \
     && tar -C /usr/local/bin -xzvf fsig_${FSIG_VERSION}_linux_amd64.tar.gz fsig \
     && rm fsig_linux_amd64.tar.gz
 ```
